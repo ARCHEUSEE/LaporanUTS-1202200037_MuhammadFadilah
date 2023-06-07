@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Barang</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function notif(){
+            alert("Sukses Mengirim");
+        }
+    </script>
+
+</head>
+<body>
+    <nav>
+        <!-- Logo JNE -->
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        <!-- Navigasi Home, About dan Contact -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Video</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contents3" id="contact">
+        <div class="container">
+            <div class="card-container">
+                <div class="left">
+                    <div class="left-container">
+                        <h2>Form Pengiriman</h2>
+                        <h2>Barang</h2>
+                        <br>
+                        <p>Harap diisi form di samping unuk mengirim paket anda</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-container">
+                        <p>Isi form di bawah ini untuk pengiriman</p>
+                        <form action="">
+                            <input type="text" placeholder="Nama Pengirim">
+                            <input type="text" placeholder="Nama Penerima">
+                            <input type="alamat" placeholder="Provinsi">
+                            <input type="alamat" placeholder="Kota">
+                            <input type="alamat2" placeholder="Jalan" autocomplete="off">
+                            <input type="phone" placeholder="Telephone" autocomplete="off">
+                            <div class="row2">
+                                    <label for="Cepat">Express</label><input type="radio" name="durasi" id="pengiriman">
+                                    <label for="Cepat">Semi-Express</label><input type="radio" name="durasi" id="pengiriman">
+                                    <label for="Biasa">Biasa</label><input type="radio" name="durasi" id="pengiriman">
+                            </div>
+                            <textarea rows="10" placeholder="Pesan"></textarea>
+                            <a class="a1" href="./index.html" onclick="notif()">kirim</a>
+
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </main>
+    <script src="LP/script.js"></script>
+</body>
+</html>

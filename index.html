@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNE</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #scroll-btn {
+            display: inline-flex;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+            z-index: 99;
+            font-size: 25px;
+            border: none;
+            outline: none;
+            background-color: #030263(0, 16, 236);
+            /* color: rgb(255, 255, 255); */
+            cursor: pointer;
+            padding: 15px 23px;
+            border-radius: 100px;
+        }
+ 
+        #scroll-btn:hover {
+            background-image: url('img/bg3.jpg');
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Logo JNE -->
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        <!-- Navigasi Home, About dan Contact -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="contents" id="home">
+        <div class="row">
+            <!-- Kalimat ajakan dan Tombol Kirim barang -->
+            <div class="content-wrapper">
+                <h1>PENGIRIMAN CEPAT DAN AMAN</h1>
+                <p>NIKMATI PENGIRIMAN CEPAT DAN AMAN BERSAMA KAMI!</p>
+                <a href="kirim.html" class="btn">KIRIM SEKARANG</a>
+            </div>
+            <!-- Logo Mobil Pengantaran  -->
+            <div class="content-wrapper">
+                <img src="img/logo5.png" width="150px", height="400px", style="align-items: center;">
+            </div>
+        </div>
+    </main>
+    <main class="contents1" id="about">
+        <div class="row">
+            <!-- Kalimat ajakan dan Tombol Kirim barang -->
+            <div class="content-wrapper">
+                <h1>TENTANG KAMI</h1>
+                <p>Perusahaan JNE adalah perusahaan logistik yang bergerak dalam bidang pengiriman barang dan logistik secara domestik dan internasional. Kami memiliki pengalaman lebih dari 10 tahun dalam menyediakan solusi logistik yang handal untuk kebutuhan bisnis pelanggan kami.</p>
+                <h2>Visi dan Misi</h2>
+                <h3>Visi</h3>
+                <p>Menjadi perusahaan logistik terdepan yang memberikan layanan terbaik di seluruh dunia.</p>
+                <h3>Misi</h3>
+                <ul>
+                    <li>Menyediakan solusi logistik yang inovatif dan efisien untuk memenuhi kebutuhan pelanggan</li>
+                    <li>Menjaga kualitas layanan yang tinggi dengan mengutamakan kepuasan pelanggan</li>
+                    <li>Mengembangkan hubungan yang baik dengan mitra bisnis, karyawan, dan komunitas</li>
+                    <li>Menerapkan praktik bisnis yang berkelanjutan dan ramah lingkungan</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </main>
+    <main class="contents2" id="video" style="padding-top: 10px;">
+            <div class="content-wrapper2">
+                <div>
+                    <h2>Video Terkait Kami</h2>
+                    <p>Berikut adalah video mengena pengenalan terkait perusahaan kami</p>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe width="700" height="415" src="https://www.youtube.com/embed/qPEPdL4wg94" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button onclick="topFunction()" id="scroll-btn" title="Top">&uarr;</button>
+    </main> 
+    <script>
+        window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+             document.getElementById("scroll-btn").style.display = "block";
+           } else {
+             document.getElementById("scroll-btn").style.display = "none";
+           }
+         }
+          
+         // ketika tombol tersebut di klik, maka lakukan scroll keatas laman
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+    </script>
+</body>
+</html>
