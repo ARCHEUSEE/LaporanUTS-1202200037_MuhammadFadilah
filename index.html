@@ -29,7 +29,7 @@
         }
     </style>
 </head>
-<body>
+<body>  
     <nav>
         <!-- Logo JNE -->
         <div class="logo">
@@ -43,7 +43,17 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+    <div class="image-slideshow">
+        <div class="image fade">
+            <img src="img\slide1.jpg" height="300px">
+        </div>        
+        <div class="image fade">
+            <img src="img\slide2.jpg" height="300px">
+        </div>        
+        <div class="image fade">
+            <img src="img\slide3.jpg" height="300px">
+        </div>
+      </div>    
     <main class="contents" id="home">
         <div class="row">
             <!-- Kalimat ajakan dan Tombol Kirim barang -->
@@ -90,22 +100,6 @@
             </div>
             <button onclick="topFunction()" id="scroll-btn" title="Top">&uarr;</button>
     </main> 
-    <script>
-        window.onscroll = function() {scrollFunction()};
-         
-         function scrollFunction() {
-           if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-             document.getElementById("scroll-btn").style.display = "block";
-           } else {
-             document.getElementById("scroll-btn").style.display = "none";
-           }
-         }
-          
-         // ketika tombol tersebut di klik, maka lakukan scroll keatas laman
-         function topFunction() {
-           document.body.scrollTop = 0;
-           document.documentElement.scrollTop = 0;
-         }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
